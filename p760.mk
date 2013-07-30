@@ -25,6 +25,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/touch_dev.idc:system/usr/idc/touch_dev.idc \
     $(LOCAL_PATH)/configs/touch_dev.kl:system/usr/keylayout/touch_dev.kl
 
+
 # stagefright confs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml \
@@ -144,6 +145,10 @@ PRODUCT_PACKAGES += \
 #copy firmware
 PRODUCT_COPY_FILES += \
   system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
+
+# Add ubuntu conf
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/88screen:system/etc/init.d/88screen
 
 # Charger mode
 PRODUCT_PACKAGES += \
