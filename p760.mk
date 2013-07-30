@@ -146,10 +146,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
   system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
-# Add ubuntu conf
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/88screen:system/etc/init.d/88screen
-
 # Charger mode
 PRODUCT_PACKAGES += \
     charger \
