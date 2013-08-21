@@ -22,22 +22,22 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
-public class GpuOverclock implements OnPreferenceChangeListener {
+public class BlnTimeout implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/devices/system/cpu/cpu0/cpufreq/gpu_max_freq";
+    public static final String KEY_BLN_TIMEOUT = "bln_timeout_preference";
 
-    public static boolean isSupported() {
-        return Utils.fileExists(FILE);
-    }
+    private static final String FILE = "/sys/class/misc/backlightnotification/notification_timeout";
+
+    public static boolean isSupported() { return Utils.fileExists(FILE); }
 
     public static void restore(Context context) {
         if (!isSupported()) {
             return;
         }
-
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        Utils.writeValue(FILE, sharedPrefs.getString(PerformanceFragment.KEY_GPU_OVERCLOCK, "1"));
+        Utils.writeValue(FILE, sharedPrefs.getString(KEY_BLN_TIMEOUT, "120"));
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
