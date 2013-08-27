@@ -23,6 +23,10 @@
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface">rmnet0</string>
 
+    <!-- CRT-OFF effect. If false - enabled. -->
+    <bool name="config_animateScreenLights">false</bool>
+
+
     <bool name="config_automatic_brightness_available">false</bool>
 
     <string-array translatable="false" name="config_tether_usb_regexs">
