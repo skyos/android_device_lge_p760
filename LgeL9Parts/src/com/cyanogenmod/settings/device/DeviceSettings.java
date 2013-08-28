@@ -12,7 +12,7 @@ public class DeviceSettings extends Activity {
 
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_TITLE, ActionBar.DISPLAY_SHOW_TITLE);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(false);
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
                     new DevicePreferenceActivity()).commit();
