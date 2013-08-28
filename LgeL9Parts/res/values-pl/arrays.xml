@@ -1,8 +1,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="gpu_overclock_entries">
-        <item>153.6 MHz (underclocked)</item>
-        <item>307.2 MHz (normal)</item>
-        <item>384.0 MHz (overclocked)</item>
+        <item>153.6 MHz</item>
+        <item>307.2 MHz (domyślnie)</item>
+        <item>384.0 MHz</item>
     </string-array>
 
     <string-array name="gpu_overclock_values" translatable="false">
@@ -12,8 +12,8 @@
     </string-array>
 
     <string-array name="iva_overclock_entries">
-        <item>332 MHz (normal)</item>
-        <item>430 MHz (overclocked)</item>
+        <item>332 MHz (domyślnie)</item>
+        <item>430 MHz</item>
     </string-array>
 
     <string-array name="iva_overclock_values" translatable="false">
@@ -22,7 +22,7 @@
     </string-array>
 
     <string-array name="max_sleep_frequency_entries">
-        <item>Not Enforced (default)</item>
+        <item>Wyłączone (domyślnie)</item>
         <item>200 MHz</item>
         <item>300 MHz</item>
         <item>600 MHz</item>
