@@ -67,7 +67,7 @@ endif
 BOARD_USES_TI_CAMERA_HAL := true
 TI_OMAP4_CAMERAHAL_VARIANT := DONOTBUILDIT
 HARDWARE_OMX := true
-
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1033686220
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2469606195
@@ -96,8 +96,9 @@ BOARD_RIL_CLASS := ../../../device/lge/p760/ril/
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/p760/bluetooth
 
 BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p760/recovery-gfx.c
+TARGET_RECOVERY_INITRC := device/lge/p760/recovery/init.rc
 BOARD_CHARGER_ENABLE_SUSPEND := true
-
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
 BOARD_SEPOLICY_DIRS := \
     device/lge/p760/selinux
 
