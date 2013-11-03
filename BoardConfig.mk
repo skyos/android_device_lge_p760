@@ -104,12 +104,12 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/lge/p760/recovery-gfx.c
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
 #BOARD_SEPOLICY_DIRS := \
-#    device/lge/p760/selinux
-#
+    device/lge/p760/selinux
+
 #BOARD_SEPOLICY_UNION := \
-#    file_contexts \
-#    pvrsrvinit.te \
-#    device.te \
-#    domain.te
+    file_contexts \
+    pvrsrvinit.te \
+    device.te \
+    domain.te
 
 BOARD_HARDWARE_CLASS := device/lge/p760/cmhw/
