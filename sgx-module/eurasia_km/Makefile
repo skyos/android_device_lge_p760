@@ -1,0 +1,2 @@
+default:
+make -C /home/artur/cm11/device/lge/p760/sgx-module/eurasia_km/eurasiacon/build/linux2/omap4430_android/ KERNELDIR=/home/artur/aosp_kernel ARCH="arm" /home/artur/cm11/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- KERNEL_CROSS_COMPILE=/home/artur/cm11/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi- TARGET_PRODUCT="blaze_tablet" BUILD=release TARGET_SGX=540 PLATFORM_VERSION=4.0
