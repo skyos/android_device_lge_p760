@@ -51,3 +51,6 @@ lge.nfc.defaultonoff=on
 ro.bt.bdaddr_path=/sys/devices/platform/bd_address/bdaddr_if
 
 persist.sys.usb.config=mtp,adb
+
+ro.bq.gpu_to_cpu_unsupported=1 
+ro.sf.hwrotation=0
