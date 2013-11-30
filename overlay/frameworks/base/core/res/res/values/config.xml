@@ -63,4 +63,6 @@
     </integer-array>
 
     <integer name="config_deviceHardwareKeys">7</integer>
+<!-- Enable lockscreen translucent decor by default -->	223
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 </resources>
