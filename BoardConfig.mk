@@ -24,9 +24,13 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 
 BOARD_HAVE_FM_RADIO := true
+BUILD_FM_RADIO := true
+FM_CHR_DEV_ST := true
+BUILD_TI_FM_APPS := true
 # Try to build the kernel
-TARGET_KERNEL_CONFIG := cyanogenmod_p760_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/omap4-common
+#TARGET_KERNEL_CONFIG := cyanogenmod_p760_defconfig
+#TARGET_KERNEL_SOURCE := kernel/lge/omap4-common
+TARGET_PREBUILT_KERNEL := device/lge/p760/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 

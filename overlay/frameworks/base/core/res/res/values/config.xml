@@ -63,8 +63,11 @@
     </integer-array>
 
     <integer name="config_deviceHardwareKeys">7</integer>
-<!-- Enable lockscreen translucent decor by default -->	223
+<!-- Enable lockscreen translucent decor by default -->
     <bool name="config_enableLockScreenTranslucentDecor">true</bool>
 
 <bool name="config_unplugTurnsOnScreen">true</bool>
+
+ <!-- If this is true, the screen will fade off. -->
+     <bool name="config_animateScreenLights">false</bool>
 </resources>
