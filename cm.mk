@@ -10,6 +10,8 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/lge/p760/p760.mk)
 
+$(call inherit-product, device/common/gps/gps_as.mk)
+
 PRODUCT_NAME := cm_p760
 
 # Release name and versioning
@@ -23,5 +25,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=u2_open_eu BUILD_FINGERPRINT=lge/u2
 PRODUCT_DEVICE := p760
 
 # Enable Torch
-PRODUCT_PACKAGES += Torch WiFiDirectDemo Camera2
+PRODUCT_PACKAGES += Torch WiFiDirectDemo Camera2 LgeL9Parts
 
