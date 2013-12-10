@@ -54,7 +54,6 @@ persist.sys.usb.config=mtp
 
 ro.bq.gpu_to_cpu_unsupported=1 
 ro.sf.hwrotation=0
-ro.zygote.disable_gl_preload=true
 
 #Tweaks
 ro.ril.enable.amr.wideband=1
@@ -66,5 +65,3 @@ ro.media.enc.hprof.vid.bps=8000000
 wifi.supplicant_scan_interval=300
 pm.sleep_mode=1
 ro.ril.disable.power.collapse=0
-debug.performance.tuning=1
-windowsmgr.max_events_per_sec=200
