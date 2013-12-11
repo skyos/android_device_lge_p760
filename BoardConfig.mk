@@ -46,7 +46,7 @@ BOARD_UMS_LUNFILE := "/sys/devices/virtual/android_usb/android0/f_mass_storage/l
 
 BOARD_USES_HWCOMPOSER := true
 
-#TARGET_HAS_WAITFORVSYNC := true
+TARGET_HAS_WAITFORVSYNC := true
 
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
 
