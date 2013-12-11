@@ -32,7 +32,7 @@
 ifeq ($(BUILD),debug)
 COMMON_USER_FLAGS := -O0
 else
-OPTIM ?= -O3 -fmodulo-sched -fmodulo-sched-allow-regmoves
+OPTIM ?= -O2
 COMMON_USER_FLAGS := $(OPTIM)
 endif
 
